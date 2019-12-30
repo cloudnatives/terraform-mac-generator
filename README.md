@@ -1,4 +1,4 @@
-# Terraform Mac Generator
+# Terraform MAC Generator
 
 ## Description
 
