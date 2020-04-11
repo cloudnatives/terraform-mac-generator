@@ -4,17 +4,27 @@
 
 This module generates a random 6-byte hexadecimal MAC address.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >=0.12.6 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| random | n/a |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|:----:|:-----:|:-----:|
-| separator | The separator to join the different bytes. \(Default: `:`\) | string | `":"` | no |
+|------|-------------|------|---------|:--------:|
+| delimiter | The delimiter to join the different bytes. (Default: `:`) | `string` | `":"` | no |
+| nr\_of\_macs | The number of MAC addresses you want to generate | `number` | `1` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| mac | The generated MAC address |
-
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+| mac\_list | The generated MAC address |
