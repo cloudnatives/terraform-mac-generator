@@ -2,7 +2,7 @@
 
 ## Description
 
-This module generates a random 6-byte hexadecimal MAC address.
+This module generates a random 6-byte hexadecimal unicast MAC address.
 
 ## Requirements
 
@@ -27,4 +27,4 @@ This module generates a random 6-byte hexadecimal MAC address.
 
 | Name | Description |
 |------|-------------|
-| mac\_list | The generated MAC address |
+| mac\_list | The generated MAC addresses |
