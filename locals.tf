@@ -8,7 +8,7 @@ locals {
 
   mac_list = flatten([
     for idx, bytes in local.list_of_bytes : [
-      join(var.delimiter, concat(list("${random_shuffle.first_digit[idx].result[0]}${random_shuffle.second_digit[idx].result[0]}"), bytes))
+      join(var.delimiter, concat(tolist(["${random_shuffle.first_digit[idx].result[0]}${random_shuffle.second_digit[idx].result[0]}"]), bytes))
     ]
   ])
 }
